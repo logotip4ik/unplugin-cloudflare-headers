@@ -74,7 +74,7 @@ build({
 
 ## Options
 
-Top level keys of the options are route definitions. Each route should have an array of headers. Headers are simple object, where key is header name and value (`string` or `false`) is header value. Let's see example.
+Top level keys of the options are route definitions. Each route should have an array of headers. Header is simple object, where key is header name and value (`string` or `false`) is header value. Let's see example.
 
 This options:
 ```js
