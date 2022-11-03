@@ -3,15 +3,20 @@
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@7.1.1",
-  "description": "Writes cloudflare headers file to public directory",
+  "description": "Generates cloudflare compatible headers with _headers file",
+  "author": {
+    "name": "Bogdan Kostyuk",
+    "email": "contact@bogdankostyuk.xyz",
+    "url": "https://bogdankostyuk.xyz"
+  },
   "license": "MIT",
-  "homepage": "https://github.com/antfu/unplugin-starter#readme",
+  "homepage": "https://github.com/logotip4ik/unplugin-cloudflare-headers#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-starter.git"
+    "url": "git+https://github.com/logotip4ik/unplugin-cloudflare-headers.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/unplugin-starter/issues"
+    "url": "https://github.com/logotip4ik/unplugin-cloudflare-headers/issues"
   },
   "keywords": [
     "unplugin",
