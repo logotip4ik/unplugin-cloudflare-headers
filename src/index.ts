@@ -1,5 +1,3 @@
-import { writeFile } from 'fs/promises'
-import { join } from 'path'
 import { createUnplugin } from 'unplugin'
 import type { Options } from './types'
 
@@ -12,15 +10,13 @@ const resolvedVirtualHeadersFile = `\0${virtualHeadersFile}`
 export default createUnplugin<Options | undefined>(options => ({
   name: 'unplugin-cloudflare-headers',
 
-  async writeBundle() {
+  buildStart() {
     if (!options)
       return
 
     const headersStringified = stringify(options)
 
-    const headersFilePath = join(process.cwd(), 'dist', cloudflareHeadersFileName)
-
-    await writeFile(headersFilePath, headersStringified)
+    this.emitFile({ type: 'asset', fileName: cloudflareHeadersFileName, source: headersStringified })
   },
 
   resolveId(id) {
