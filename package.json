@@ -1,7 +1,7 @@
 {
   "name": "unplugin-cloudflare-headers",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "packageManager": "pnpm@7.1.1",
   "description": "Generates cloudflare compatible headers with _headers file",
   "author": {
