@@ -7,10 +7,12 @@ const cloudflareHeadersFileName = '_headers'
 const virtualHeadersFile = 'virtual:cloudflare-headers'
 const resolvedVirtualHeadersFile = `\0${virtualHeadersFile}`
 
+export * from './types'
+
 export default createUnplugin<Options | undefined>(options => ({
   name: 'unplugin-cloudflare-headers',
 
-  buildStart() {
+  buildEnd() {
     if (!options)
       return
 
